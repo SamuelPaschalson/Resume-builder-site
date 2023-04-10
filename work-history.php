@@ -2,9 +2,10 @@
 session_start();
 $_SESSION['id'] = $_GET['id'];
 if (!isset($_SESSION['id'])) {
-  header("location: login.php");
+  header("location: index");
 }
 $id = $_SESSION['id'];
+$ids = $_GET['ids'];
 //$row['unique_id'] = $_SESSION['id'];
 
 ?>
@@ -13,46 +14,28 @@ $id = $_SESSION['id'];
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="RemixIcon-master/fonts/remixicon.css"/>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="RemixIcon-master/fonts/remixicon.css"/>
   <script src="js/index.js"></script>
-  
+  <link rel="icon" href="img/favicon.png">
+ 
     <title>Work History - XenOK</title>
   </head>
   <body>
-    <nav class="fixed-top">
-      <label class="logo"><a class="navbar-brand" href=" ">Xen<b>OK</b></a></label>
-      <ul>
-        <li class="num">1</li>
-        <li class="">Heading</li>
-        <li class="num">2</li>
-        <li class="">Heading</li>
-      </ul>
-    </nav>
-    <header class="">
-      <div class="heading-tag">
-        <div class="heading-text">
-          <form class="" action="code" method="post" accept-charset="utf-8">
-            <input type="hidden" name="id" id="id" value="<?php echo ($_SESSION['id']); ?>" />
-          <button name="contact-info" class="btn ri-arrow-left-line" type="submit"></button>
-          </form>
-          <h4 class="🤩">Work-History</h4>
-          <div class="spinner-wrapper-work">
-            <div class="spinner">
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle active"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-              </div>
-          </div>
-        </div>
-      </div>
-    </header>
+  <nav class="fixed-top">
+            <input type="checkbox" name="check" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a class="nav-brand" style="color: #e58411;text-decoration: none;cursor: pointer;"><img src="img/favicon.png" alt="logo"> XENOK.</a>
+            <ul>
+              <li><a target="_blank" rel="noopener noreferrer">Heading</a></li>
+              <li><a target="_blank" rel="noopener noreferrer">Heading</a></li>
+              <li><a target="_blank" rel="noopener noreferrer">Heading</a></li>
+              <li><a target="_blank" rel="noopener noreferrer">Heading</a></li>
+            </ul>
+        </nav>
     <section class="section-info">
       <div class="contact-info-text">
         <div class="info-text">
@@ -62,6 +45,7 @@ $id = $_SESSION['id'];
         <div class="contact-info-body work">
           <form method="post" action="code.php" >
             <input type="hidden" name="id" value="<?php echo($id);?>">
+            <input type="hidden" name="ids" value="<?php echo($ids);?>">
             <div id="dynamic_field">
               <div class="form-group">
               <label class="form-control-label" for="">Company Name</label>
@@ -100,7 +84,7 @@ $id = $_SESSION['id'];
             </div>
           <div class="buttons">
             <div class="nav-btns">
-              <a class="btn btn-outline-primary" href="contact-info.php">BACK</a>
+              <a class="btn btn-outline-primary" href="contact-info.php?id=<?php echo $id; ?>">BACK</a>
             </div>
             <div class="nav-btn">
               <button id="submit" name="workh" class="btn btn-outline-warning" type="submit">NEXT:ADD WORK DETAILS</button>
@@ -119,6 +103,7 @@ $id = $_SESSION['id'];
         <div class="contact-info-bod-small">
           <form method="post" action="code.php" >
             <input type="hidden" name="id" value="<?php echo($id);?>">
+            <input type="hidden" name="ids" value="<?php echo($ids);?>">
             <div id="dynamic_field">
               <div class="form-group">
               <label class="form-control-label" for="">Company Name</label>

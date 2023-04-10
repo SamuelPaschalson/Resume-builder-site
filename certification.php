@@ -11,22 +11,22 @@ $id = $_GET['id'];
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="RemixIcon-master/fonts/remixicon.css"/>
+  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="RemixIcon-master/fonts/remixicon.css"/>
+  <script src="js/index.js"></script>
     <title>Certifications - XenOK</title>
   </head>
   <body>
-    <nav class="fixed-top">
-      <label class="logo"><a class="navbar-brand" href=" ">Xen<b>OK</b></a></label>
-      <ul>
-        <li class="num">1</li>
-        <li class="">Heading</li>
-        <li class="num">2</li>
-        <li class="">Heading</li>
-      </ul>
-    </nav>
+  <nav class="fixed-top">
+            <input type="checkbox" name="check" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a class="nav-brand" href="" style="color: #e58411;"><img src="img/favicon.png" alt="logo"> XENOK.</a>
+        </nav>
     <header class="">
       <div class="heading-tag">
         <div class="heading-text">
@@ -37,13 +37,7 @@ $id = $_GET['id'];
           <h4 class="🤩">Certifications</h4>
           <div class="spinner-wrapper">
             <div class="spinner skill">
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle active"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
+
               </div>
           </div>
         </div>
@@ -66,7 +60,7 @@ $id = $_GET['id'];
             </div>
           <p class="mt-1">*Note if you are trying to update your certificate, first delete your certificate then insert new certificate, this is to help us serve you better.*</p>
           <div class="social-text">
-            <div class="social" id="add" name="add">
+            <div class="social" id="add" name="add" style="cursor: pointer;">
               <i class="fas fa-plus"></i>
               <h5 class="h6">Add New Certificate</h5>
             </div>

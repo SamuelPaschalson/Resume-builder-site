@@ -11,23 +11,21 @@ $id = $_GET['id'];
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="RemixIcon-master/fonts/remixicon.css"/>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="RemixIcon-master/fonts/remixicon.css"/>
   <script src="js/index.js"></script>
     <title>Education - XenOK</title>
   </head>
   <body>
-    <nav class="fixed-top">
-      <label class="logo"><a class="navbar-brand" href=" ">Xen<b>OK</b></a></label>
-      <ul>
-        <li class="num">1</li>
-        <li class="">Heading</li>
-        <li class="num">2</li>
-        <li class="">Heading</li>
-      </ul>
-    </nav>
+  <nav class="fixed-top">
+            <input type="checkbox" name="check" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a class="nav-brand" href="" style="color: #e58411;"><img src="img/favicon.png" alt="logo"> XENOK.</a>
+        </nav>
     <header class="">
       <div class="heading-tag">
         <div class="heading-text">

@@ -54,17 +54,17 @@ foreach ($contact_arr as $key => $value )
 
   if (!$flag) {
 
-if ($cert > 1) {
-  for ($i = 0; $i < $cert; $i++) {
-  
-    if (trim($_POST['cert'][$i]) != '') {
-        $contact_arr1[] = array('id'=>$id, 'cert'=>$_POST["cert"][$i], 'cert'=>$_POST["cert"][$i], 'idd'=>$i);
-      print_r($_POST["cert"][$i]);
-      print_r($cert);
+  if ($cert > 1) {
+    for ($i = 0; $i < $cert; $i++) {
+    
+      if (trim($_POST['cert'][$i]) != '') {
+          $contact_arr1[] = array('id'=>$id, 'cert'=>$_POST["cert"][$i], 'cert'=>$_POST["cert"][$i], 'idd'=>$i);
+        print_r($_POST["cert"][$i]);
+        print_r($cert);
+      }
+    
     }
-  
   }
-}
    $ids['uniqid'] = $id;
 file_put_contents('cert.json', json_encode($contact_arr1, JSON_PRETTY_PRINT));
          header("location: skills.php?id=".$ids['uniqid']."");

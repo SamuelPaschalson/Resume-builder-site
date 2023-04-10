@@ -1,123 +1,607 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="js/index.js"></script>
-  <title>Resume Site</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Free resume builder, the fastest resume maker with effective, built-in resume templates. Personal reviews by experts. Make your perfect resume in minutes!" />
+    <meta name="robots" content="nofollow, noindex" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Free Resume Builder | Resume Builder | XENOK | Online Resume | Builder" />
+    <meta property="og:description" content="Free resume builder, the fastest resume maker with effective, built-in resume templates. Personal reviews by experts. Make your perfect resume in minutes!" />
+    <meta property="og:url" content="https://xenok@netlify.app.com/" />
+    <meta property="og:site_name" content="XENOK" />
+    <meta property="article:publisher" content="https://www.facebook.com/XENOK" />
+    <meta property="og:updated_time" content="2023-01-30T05:24:17-05:00" />
+    <meta property="article:published_time" content="2023-01-01T22:03:54-05:00" />
+    <meta property="article:modified_time" content="2023-01-30T05:24:17-05:00" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Free Resume Builder | Resume Builder | XENOK | Online Resume | Builder" />
+    <meta name="twitter:description" content="Free resume builder, the fastest resume maker with effective, built-in resume templates. Personal reviews by experts. Make your perfect resume in minutes!" />
+    <meta name="twitter:site" content="@XENOK" />
+    <meta name="twitter:creator" content="@SamuelPaschalson" />
+    <!-- Title -->
+    <title>XENOK - Resume Builder</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
-<body data-target=".fixed-top">
-  <nav class="fixed-top">
-    <input type="checkbox" name="check" id="check" />
-    <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <label class="logo"><a class="navbar-brand" href=" ">Xen<b>OK</b></a></label>
-    <ul>
-      <li><a href="login">Resume</a></li>
-      <li><a href="not-available">CV</a></li>
-      <li><a href="not-available">Cover Letter</a></li>
-      <li><a href="not-available">Blog</a></li>
-    </ul>
-  </nav>
-  <section class="main_section">
-    <div class="main">
-      <h6 class="main__text">Your automated resume maker</h6>
-      <h2 class="main__text2">XenOK Resume Builder <br />Professional Resume &amp; Cover Letter Tools For Any Job.</h2>
-      <button class="btn resume-btn"><a href="login">BUILD MY RESUME NOW</a></button>
+
+<body class="light-version">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="dream-load"></div>
+        </div>
     </div>
-  </section>
-  <section class="section--medium">
-    <div class="benefits">
-      <h2 class="benefits_title">Benefits of Using <i>Xen<b>OK</b></i></h2>
-      <div class="benefits__text">
-        <div class="benefits__text__1">
-          <i><svg viewBox="0 0 37 56" style="height: 3.4rem; width: 3.4rem;"><path d="M18.5 55.84c-3.34 0-6.42-.84-9.24-2.53a18.27 18.27 0 0 1-9.13-15.9c0-2.45.5-4.8 1.49-7.03a19.01 19.01 0 0 1 4.12-5.95V13.6c0-2.35.57-4.5 1.7-6.43A12.84 12.84 0 0 1 18.5.79a12.84 12.84 0 0 1 11.05 6.38 12.51 12.51 0 0 1 1.71 6.43v10.83a19.01 19.01 0 0 1 4.12 5.95 17.2 17.2 0 0 1 1.49 7.04 18.27 18.27 0 0 1-9.13 15.89 17.69 17.69 0 0 1-9.24 2.53zm9.13-42.24a8.8 8.8 0 0 0-1.24-4.56 9.33 9.33 0 0 0-3.32-3.33 8.8 8.8 0 0 0-4.57-1.24 8.8 8.8 0 0 0-4.56 1.24 9.33 9.33 0 0 0-3.33 3.33 8.8 8.8 0 0 0-1.24 4.56v8.03a17.6 17.6 0 0 1 9.13-2.47c3.3 0 6.34.82 9.13 2.47V13.6zm-9.13 9.24c-2.64 0-5.09.66-7.34 1.98a15.1 15.1 0 0 0-5.37 5.23 14.18 14.18 0 0 0-2.03 7.4c0 2.65.68 5.13 2.04 7.45a14.95 14.95 0 0 0 12.7 7.26c2.64 0 5.1-.66 7.37-1.98a14.45 14.45 0 0 0 5.33-5.28 14.47 14.47 0 0 0 2.04-7.46c0-2.66-.68-5.12-2.04-7.4a14.25 14.25 0 0 0-5.33-5.25 14.58 14.58 0 0 0-7.37-1.95zm1.82 14.19v7.81h-3.64v-7.81a3.72 3.72 0 0 1-1.81-3.25c0-1.02.35-1.88 1.04-2.58.7-.7 1.56-1.04 2.59-1.04 1.03 0 1.89.34 2.59 1.04s1.04 1.56 1.04 2.58a3.71 3.71 0 0 1-1.81 3.25z" style="fill: rgb(234, 152, 10);"></path></svg></i>
-          <div class="benefits_area">
-           <h3 class="cover-l">Cover Letter Builder</h3>
-           <p class="🤣">Generate a cover letter using a template matching your resume. <a href="cover-letter-builder">Build your cover letter here.</a></p>
-          </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <div class="classy-nav-container dark breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="dreamNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="" style="color: #e58411;"><img src="img/favicon.png" alt="logo of xenok."> XENOK.</a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li><a href="index">Home</a></li>
+                                <li><a href="about-us">About Us</a></li>
+                                <li><a href="contact-us">Contact Us</a></li>
+                            </ul>
+
+                            <!-- Button -->
+                            <a href="#test-popup" class="open-popup-link btn dream-btn green-btn sam">Log in</a>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
         </div>
-        <div class="benefits__text__1">
-          <i><svg viewBox="0 0 55 56" style="height: 3.4rem; width: 3.4rem;"><path d="M23.98 28.84L14.85 17a.87.87 0 0 1-.16-.69.93.93 0 0 1 .96-.85c.24 0 .43.05.58.16l11.93 9.13.22.22c.62.56.94 1.3.94 2.26 0 .8-.28 1.5-.83 2.06-.55.57-1.23.86-2.04.86-.95 0-1.7-.37-2.25-1.1l-.22-.22zM27.5.79c4.95 0 9.57 1.26 13.86 3.79a26.97 26.97 0 0 1 9.84 9.85A26.87 26.87 0 0 1 55 28.3c0 4.97-1.26 9.6-3.8 13.89a26.97 26.97 0 0 1-9.84 9.84 26.82 26.82 0 0 1-13.86 3.8c-4.95 0-9.57-1.26-13.86-3.8a26.97 26.97 0 0 1-9.85-9.84A26.92 26.92 0 0 1 0 28.28 27.4 27.4 0 0 1 8.09 8.88l2.36 2.37a22.78 22.78 0 0 0-5.14 7.64 25.06 25.06 0 0 0-1.68 9.4c0 4.59 1.03 8.71 3.08 12.38 2.02 3.6 4.82 6.4 8.41 8.42a24.89 24.89 0 0 0 12.38 3.08c4.58 0 8.7-1.03 12.38-3.08 3.59-2.02 6.4-4.83 8.41-8.42a24.89 24.89 0 0 0 3.08-12.37c0-4.4-1.06-8.5-3.19-12.27a23.44 23.44 0 0 0-8.06-8.55c-3.39-2.15-7-3.22-10.8-3.22v9.46h-3.64V.78h1.82z" style="fill: rgb(234, 152, 10);"></path></svg></i>
-          <div class="benefits_area">
-          <h4 class="cover-l">Save's Time</h4>
-          <p class="🤣">Our resume builder will save you time creating your resume. Simply choose a template, and filling it</p>
-          </div>
-        </div>
-        <div class="benefits__text__1">
-          <i><svg viewBox="0 0 45 56" style="height: 3.4rem; width: 3.4rem;"><path d="M44.5 55.84H.5V.78h31.13L44.5 13.6v42.24zM31.63 5.4v8.2h8.25l-8.25-8.2zm9.24 11.94H28V4.47H4.13v47.69h36.74V17.34zm-5.61 10.95H9.74v-3.63h25.52v3.63zm0 7.31H9.74v-3.63h25.52v3.63zm0 7.42H9.74v-3.74h25.52v3.74z" style="fill: rgb(234, 152, 10);"></path></svg></i>
-          <div class="benefits_area">
-          <h4 class="cover-l">Flexible Text Editor</h4>
-            <p class="🤣">You will have access to the best text editor available.</p>
-          </div>
-        </div>
-        <div class="benefits__text__1">
-          <i><svg viewBox="0 0 55 52" style="height: 3.4rem; width: 3.4rem;"><path d="M27.5.66l8.47 16.82L55 20.18l-13.75 13.2 3.24 18.59-16.99-8.8-17 8.8 3.25-18.59L0 20.18l19.03-2.7L27.5.66zm-6.21 19.96L7.31 22.66l10.06 9.9-2.36 13.96 12.48-6.6 12.48 6.6-2.36-13.97 10.07-9.9-13.97-2.03-6.22-12.7-6.21 12.7z" style="fill: rgb(234, 152, 10);"></path></svg></i>
-          <div class="benefits_area">
-            <h4 class="cover-l">Get tips from expert</h4>
-            <p class="🤣">The expert advice on our blog explains every part of the job application process.</p>
-          </div>
-        </div>
-        <div class="benefits__text__1">
-          <i><svg viewBox="0 0 37 56" style="height: 3.4rem; width: 3.4rem;"><path d="M28.51 40.44c-.55 1.54-1.2 3.6-1.93 6.16a40.89 40.89 0 0 1-1.64 5 6.94 6.94 0 0 1-2.32 3.14 6.96 6.96 0 0 1-4.12 1.1c-1.72 0-3.1-.38-4.13-1.16a7.7 7.7 0 0 1-2.36-3.24c-.4-.95-.96-2.67-1.68-5.14a102 102 0 0 0-1.84-5.86c-.37-1.06-.88-2.3-1.54-3.68L4.91 32.9a68.5 68.5 0 0 1-3.24-6.55A17.8 17.8 0 0 1 .13 19.7c0-3.4.84-6.58 2.53-9.51a18.4 18.4 0 0 1 6.6-6.82A17.6 17.6 0 0 1 18.5.79c3.3 0 6.38.86 9.24 2.58a18.4 18.4 0 0 1 6.6 6.82 18.77 18.77 0 0 1 2.53 9.51c0 1.91-.5 4.1-1.48 6.55a81.61 81.61 0 0 1-3.3 6.66l-2.04 3.85a36.88 36.88 0 0 0-1.54 3.68zm-13.64 9.9c.04.11.1.2.17.27.1.23.27.43.49.61.33.3.7.51 1.1.66a5.9 5.9 0 0 0 1.87.27c.8 0 1.48-.09 2.04-.27.47-.15.86-.37 1.15-.66.18-.18.33-.38.44-.6l.11-.28 2.59-9.24H12.17l2.69 9.24zM18.5 4.47c-2.71 0-5.2.68-7.45 2.04a14.71 14.71 0 0 0-5.34 5.52 15.46 15.46 0 0 0-1.95 7.67c0 1.62.42 3.5 1.27 5.67a49.38 49.38 0 0 0 2.96 6.05 66.19 66.19 0 0 1 2.97 6h15.07c.6-1.33 1.58-3.32 2.97-6a46.6 46.6 0 0 0 2.92-6.1c.8-2.13 1.21-4 1.21-5.62 0-2.78-.64-5.34-1.93-7.67a14.3 14.3 0 0 0-5.22-5.47 14.04 14.04 0 0 0-7.48-2.09z" style="fill: rgb(234, 152, 10);"></path></svg></i>
-          <div class="benefits_area">
-            <h4 class="cover-l">Durable and Easy to use</h4>
-            <p class="🤣">Our online resume builder will help you build your  in minutes.</p>
-          </div>
-        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- Login popup form  -->
+
+    <div id="test-popup" class="white-popup mfp-hide">
+      <div class="top-form-header">
+          <h4>Login Form</h4>
       </div>
+      <form action="code.php" method="post" id="main_login_form" novalidate="">
+            <div class="row">
+             
+               <div class="col-12 col-md-12">
+                    <div class="group">
+                        <input type="text" name="username" id="name0" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="group">
+                        <input type="password" name="password" id="name1" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Password</label>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-5 text-left ">
+                    <button name="submit" type="submit" class="btn dream-btn">Login</button>
+                </div>
+                <div class="col-12 col-sm-7 text-left">
+                    <p class="mb-0 mt-10">Don't have an account? <a href="#signup-popup" class="open-signup-link">Sign up</a></p>
+                </div>
+            </div>
+        </form>
+
+        <div class="other-accounts text-center">
+            <p class="w-text">Login with other account</p>
+            <div class="footer-social-info">
+                <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+        </div>
     </div>
-  </section>
-  <section class="XenOK😎">
-    <div class="😘">
-      <h2 class="😀">Using XenOK is as simple as a,b,c.</h2>
-      <div class="😅">
-        <div class="🤩 step">
-          <div data-section-number="a" class="section-a a-section"></div>
-          <div class="section-text">
-            <h3>Fill in your details </h3>
-            <p>Firstly, you’ll be asked a short series of questions. Enter information about your education, relevant skills, and work history. You’ll be able to select from prewritten bullet points to speed up time — just add hard numbers to your bullet points to show your relevant achievements in context.</p>
-            </div>
-        </div>
-        <div class="🤩 step">
-          <div data-section-number="b" class="section-a b-section"></div>
-          <div class="section-text">
-<h3>Select a template </h3>
-<p>Next, you'll pick a template and color. We’ve categorized them by style for your convenience: modern or traditional, casual or formal. Colorful templates work best in creative industries, while darker colors are better for traditional fields.</p>
-            </div>
-        </div>
-        <div class="🤩 step">
-          <div data-section-number="c" class="section-a c-section"></div>
-          <div class="section-text">
-<h3>Download your new resume </h3>
-<p>Once you’ve entered all of your information, our resume builder provides a preview of your resume. You can then modify it, see what it looks like using a different template, or download it in your preferred file format — ready to send to hiring managers.</p>
-            </div>
-        </div>
+    
+    <!-- signup popup form so: -->
+
+    <div id="signup-popup" class="white-popup mfp-hide">
+      <div class="top-form-header">
+          <h4>Signup Form</h4>
       </div>
+      <form action="code.php" method="post" id="main_Signup_form" novalidate="">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="group">
+                        <input type="text" name="username" id="name3" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Name</label>
+                    </div>
+                </div>
+               <div class="col-12 col-md-12">
+                    <div class="group">
+                        <input type="text" name="email" id="name4" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="group">
+                        <input type="password" name="password" id="name5" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Password</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="group">
+                        <input type="password" name="cpassword" id="name6" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Confirm Password</label>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-5 text-left ">
+                    <button type="submit" name="submit" class="btn dream-btn">Login</button>
+                </div>
+                <div class="col-12 col-sm-7 text-left">
+                    <p class="mb-0 mt-10">Have an account? <a href="#test-popup" class="open-popup-link">Login in</a></p>
+                </div>
+            </div>
+        </form>
+
+        <div class="other-accounts text-center">
+            <p class="w-text">Login with other account</p>
+            <div class="footer-social-info">
+                <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+        </div>
     </div>
-  </section>
-  <section class="faq-section">
-    <div class="faq faq-in">
-      <h2 class="faq-head">Frequently Asked Questions</h2>
-      <aside class="faq-aside">
-      <article class="faq-article active">
-      <header class="faq-article-header">
-<h3><p id="why-resume-genius">Why is XenOk the best free resume builder online?</p></h3>
-<div>
-<svg class="icon icon-close-new" aria-hidden="true" role="img"> <use xlink:href="#icon-close-new"><template shadowmode="closed"></template></use> </svg> <svg class="icon icon-angle-down" aria-hidden="true" role="img"> <use xlink:href="#icon-angle-down"><template shadowmode="closed"></template></use> </svg> </div>
-</header>
-<div>
-  
-</div>
-</article>
-</aside>
-    </div>
-  </section>
+
+    <!-- ##### Welcome Area Start ##### -->
+    <section class="welcome_area demo2 flex align-items-center">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Welcome Content -->
+                <div class="col-12 col-lg-6 col-md-12">
+                    <div class="welcome-content v2">
+
+                        <h1 class="wow fadeInUp" data-wow-delay="0.2s">XENOK Online Resume Builder. <br>With Professional Templates.</h1>
+                        <p class="wow fadeInUp" data-wow-delay="0.3s">Our Perfect resume builder takes the hassle out of resume writing. Choose from several templates and follow easy prompts to create the perfect job-ready resume.</p>
+                        <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
+                            <a href="#signup-popup" class="open-popup-link btn dream-btn green-btn mr-3">Create My Resume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-12">
+                    <div class="banner-box">
+                        <img src="img/cv.png" alt="cv banner image of the site">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <!-- ##### Welcome Area End ##### -->
+
+    <div class="clearfix"></div>
+
+    <section class="demo-video feat section-padding-100 bub-left">
+        <div class="container">
+            
+            <div class="row align-items-center">
+                
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="services-block-four">
+                        <div class="inner-box">
+                            <div class="icon-img-box">
+                                <img src="img/d1.png" alt="easy resume builder logo">
+                            </div>
+                            <h3><a href="#">Easy Resume Builder</a></h3>
+                            <div class="text">Our resume builder will save you time creating your resume. Simply choose a template, and fill it.</div>
+                            
+                        </div>
+                    </div>
+                    <div class="services-block-four">
+                        <div class="inner-box">
+                            <div class="icon-img-box">
+                                <img src="img/d2.png" alt="get tips from experts logo">
+                            </div>
+                            <h3><a href="#">Get Tips from Experts</a></h3>
+                            <div class="text">The expert advice on our blog explains every part of the job application process.</div>
+                            
+                        </div>
+                    </div>
+                    <div class="services-block-four" style="margin-bottom:0">
+                        <div class="inner-box">
+                            <div class="icon-img-box">
+                                <img src="img/d3.png" alt="recruiter approved phrase logo">
+                            </div>
+                            <h3><a href="#">Recruiter Approved Phrases</a></h3>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi.</div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="who-we-contant mt-s">
+                        <h4>Why Choose Us?</h4>
+                        <p>Resume writing can be stressful, confusing, and time-consuming if you do it all on your own. With our Resume Maker, it's quick, pain-free, and effective.</p>
+                        <a class="open-signup-link btn dream-btn mt-30" href="#signup-popup">lets build your Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+       
+    <!-- ##### About Us Area Start ##### -->
+    <section class="about-us-area section-padding-100 clearfix">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-12 col-lg-6">
+                    <div class="who-we-contant">
+                        <h4 class="bold">What's in it for you?</h4>
+                        <div class="list-wrap align-items-center">
+                            <div class="row">
+                                
+                                <div class="col-md-12">
+                                    <div class="side-feature-list-item">
+                                        <img src="img/check.png" class="check-mark-icon" alt="check icon logo">
+                                        <div class="foot-c-info">Professional templates for all types of jobs</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="side-feature-list-item">
+                                        <img src="img/check.png" class="check-mark-icon" alt="check icon logo">
+                                        <div class="foot-c-info">Creative and Clean Templates Design</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="side-feature-list-item">
+                                        <img src="img/check.png" class="check-mark-icon" alt="check icon logo">
+                                        <div class="foot-c-info">Easy and Intuitive Online Resume Builder</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="side-feature-list-item">
+                                        <img src="img/check.png" class="check-mark-icon" alt="check icon logo">
+                                        <div class="foot-c-info">Free to use. Developed by hiring professionals.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="side-feature-list-item">
+                                        <img src="img/check.png" class="check-mark-icon" alt="check icon logo">
+                                        <div class="foot-c-info">Fast Easy Resume and Resume Formatting</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="side-feature-list-item">
+                                        <img src="img/check.png" class="check-mark-icon" alt="check icon logo">
+                                        <div class="foot-c-info">Matching cover letter builder.</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="welcome-meter wow fadeInUp mt-s" data-wow-delay="0.3s">
+                        <img src="img/overview_2@1x.png" class="center-block" alt="About Us overview logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### About Us Area End ##### -->
+    
+    <div class="clearfix"></div>
+
+
+    <section class="demo section-padding-100 ring-bg">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2 class="bold">Start by Picking a Template</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="demo-item">
+                        <a href="#test-popup" class="open-popup-link"><img src="img/demo1.png" alt="demo" class="img-responsive"></a>
+                        <div class="preview-btn-wrapper text-center">
+                            <a href="#test-popup" class="open-popup-link preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="demo-item">
+                        <a href="#test-popup" class="open-popup-link"><img src="img/demo2.png" alt="demo" class="img-responsive"></a>
+                        <div class="preview-btn-wrapper text-center">
+                            <a href="#test-popup" class="open-popup-link preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="demo-item">
+                        <a href="#test-popup" class="open-popup-link"><img src="img/demo3.png" alt="demo" class="img-responsive"></a>
+                        <div class="preview-btn-wrapper text-center">
+                            <a href="#test-popup" class="open-popup-link preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ##### Our features Area Start ##### -->
+    <section class="our_services_area section-padding-100-70" id="services">
+        <div class="container">
+            
+            <div class="section-heading text-center">
+                <h2 class="wow fadeInUp" data-wow-delay="0.3s">How it Works?</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">Build your job-winning resume in three simple steps:</p>
+            </div>
+                
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-center mb-100 wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Icon -->
+                        <div class="service_icon">
+                            <img src="img/f1.png" alt="">
+                        </div>
+                        <h6>Step 1</h6>
+                        <p>Choose one of our professionally designed resumes.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-center mb-100 wow wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="service_icon">
+                            <img src="img/f2.png" alt="">
+                        </div>
+                        <h6>Step 2</h6>
+                        <p>Fill in your details using our simple prompts.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-center mb-100 wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Icon -->
+                        <div class="service_icon">
+                            <img src="img/f3.png" alt="">
+                        </div>
+                        <h6>Step 3</h6>
+                        <p>Download the DOC or PDF & start applying for jobs today!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Our features Area End ##### -->
+
+    <!-- ##### Testimonial Area Start ##### -->
+    <section class="clients_testimonials_area section-padding-0-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>What Our Users Say About Us...</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cotainer-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-xs-10 offset-xs-1">
+                    <div class="client_slides owl-carousel">
+
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <!-- Testimonial Image -->
+                            <div class="testimonial_image icon_wrapper">
+                                <img src="img/1.jpg" alt="">
+                            </div>
+                            <!-- Testimonial Feedback Text -->
+                            <div class="testimonial-description">
+                                <!-- Admin Text -->
+                                <div class="admin_text">
+                                    <h5>John Doe</h5>
+                                    <p>Pharmacist</p>
+                                </div>
+                                <div class="testimonial_text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <!-- Testimonial Image -->
+                            <div class="testimonial_image icon_wrapper">
+                                <img src="img/3.jpg" alt="">
+                            </div>
+                            <!-- Testimonial Feedback Text  -->
+                            <div class="testimonial-description">
+                                <!-- Admin Text -->
+                                <div class="admin_text">
+                                    <h5>Emily Crow</h5>
+                                    <p>Author</p>
+                                </div>
+                                <div class="testimonial_text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <!-- Testimonial Image -->
+                            <div class="testimonial_image icon_wrapper">
+                                <img src="img/2.jpg" alt="">
+                            </div>
+                            <!-- Testimonial Feedback Text  -->
+                            <div class="testimonial-description">
+                                <!-- Admin Text -->
+                                <div class="admin_text">
+                                    <h5>Josh Tuck</h5>
+                                    <p>UI/UX Designer</p>
+                                </div>
+                                <div class="testimonial_text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Testimonial Area End ##### -->
+
+    
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area bg-img">
+
+        <div class="footer-content-area spec">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="footer-copywrite-info">
+                            <!-- Copywrite -->
+                            <div class="copywrite_text fadeInUp" data-wow-delay="0.2s">
+                                <div class="footer-logo">
+                                    <a href="" style="color: #e58411;"><img src="img/favicon.png" alt="logo"> XENOK. </a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad.</p>
+                            </div>
+                            <!-- Social Icon -->
+                            <div class="footer-social-info fadeInUp" data-wow-delay="0.4s">
+                                <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="contact_info_area d-sm-flex justify-content-between">
+                            <!-- Content Info -->
+                            <div class="contact_info mt-x text-center fadeInUp" data-wow-delay="0.3s">
+                                <h5>PRIVACY</h5>
+                                <a href=""><p>Blog</p></a>
+                                <a href=""><p>Use Policy</p></a>
+                                <a href=""><p>Privacy Policy</p></a>
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div class="col-12 col-lg-2 col-md-6 ">
+                        <!-- Content Info -->
+                        <div class="contact_info_area d-sm-flex justify-content-between">
+                            <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.2s">
+                                <h5>Our Services</h5>
+                                <a href=""><p>Developers</p></a>
+                                <a href=""><p>Resources</p></a>
+                                <a href=""><p>Company</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-12 col-lg-3 col-md-6 ">
+                        <div class="contact_info_area d-sm-flex justify-content-between">
+                            <!-- Content Info -->
+                            <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.4s">
+                                <h5>CONTACT US</h5>
+                                <p>Mailing Address: xxxx Berlin Str.</p>
+                                <p>5th Avenue New York, CO 64429</p>
+                                <p>+123 45678 901</p>
+                                <p>hello@yoursite.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ########## All JS ########## -->
+    <!-- jQuery js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Parallax js -->
+    <script src="js/dzsparallaxer.js"></script>
+
+    <script src="js/jquery.syotimer.min.js"></script>
+
+    <!-- script js -->
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>

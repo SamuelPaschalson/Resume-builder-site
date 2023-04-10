@@ -1,0 +1,285 @@
+@font-face{
+    src: url(../../../font/Century\ Gothic.ttf);
+    font-family: 'Century';
+}
+@font-face{
+    src: url(../../../font/poppins/Poppins-Light.otf);
+    font-family: 'Poppins';
+}
+@font-face{
+    src: url(../../../font/poppins/Poppins-LightItalic.otf);
+    font-family: 'PoppinsI';
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Century', sans-serif;
+}
+.darker-blue{
+    background: linear-gradient(180deg,#240044 0,#0f0240 25%,#400959 40%,#0f0240 65%,#0f0240);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.clear-fix{clear: both}
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    outline: none;
+}
+
+/* li {
+    list-style: none;
+} */
+
+p {
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+.page-content{
+    display: block;
+}
+.page-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1724px;
+    width: auto;
+    margin: 40px 0;
+    border: 1px solid gray;
+}
+.page-left{
+    background: #084888;
+    flex: 1;
+    display: block;
+    padding-top: 10px;
+}
+.page-left .info{
+    padding-left: 15px;
+    color: antiquewhite;
+    margin-bottom: -10px;
+}
+.one .info{
+    padding-top: .5rem;
+    font-size: 30px;
+}
+.page-left h2.info{
+    color: white;
+    font-size: 25px;
+}
+.page-left p.info{
+    color: white;
+}
+.one .info:last-child{
+    padding-bottom: 1.5rem;
+    font-size: 16px;
+}
+.one-left .infos{
+    font-size: 13px;
+}
+.page-left .active{
+    background: rgb(2, 2, 121);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2px 0;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.two{
+    padding-bottom: 10px;
+}
+.two h2{
+    font-size: 20px;
+}
+.two h4{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.page-left h6.info{
+    font-size: 12px;
+    padding-bottom: 15px;
+    color: rgb(209, 201, 190);
+}
+.three h6.info{
+    font-size: 13px;
+    padding-bottom: 20px;
+    color: rgb(209, 201, 190); 
+}
+.three-five{
+    padding-bottom: 20px;
+}
+.four{
+    padding: 0 15px;
+    padding-bottom: 15px;
+}
+.five{
+    padding-bottom: 5rem;
+}
+.page-left span.info{
+    padding-left: 0;
+    font-size: 13px;
+}
+.progress{
+    height: 0.7rem;
+    background-color: rgb(26, 26, 161);
+}
+.progress-bar{
+    height: 0.7rem;
+}
+span.right-sm{
+    float: right;
+    font-size: 12px;
+    color: rgb(209, 201, 190);
+}
+.page-right{
+    flex: 3;
+    position: relative;
+}
+.page-right .infos{
+    padding-left: 15px;
+    font-size: 13px;
+}
+.page-right .top{
+    padding-left: 15px;
+    position: relative;
+    display: flex;
+    width: auto;
+}
+.one-left h6.infos{
+    width: 90px;
+    font-size: 13px;
+    line-height: 25px;
+}
+.one-left{
+    flex: 1;
+    position: relative;
+}
+.one-right{
+    flex: 3;
+    position: relative;
+}
+.one-right ul{
+    margin-top: -15px;
+}
+.one-right ul li{
+    font-size: 14px;
+}
+.one-right h4.main{
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 5px;
+    margin-left: -20px;
+}
+.one-right h5.main{
+    font-weight: 100;
+    font-size: 15px;
+    padding-top: 5px;
+    margin-left: -20px;
+}
+.one-right p{
+    font-size: 12px;
+    margin-left: -20px;
+    font-family: 'PoppinsI';
+    margin-top: -8px;
+}
+.t-one{
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+.t-one::after{
+    content: "";
+    height: 1px;
+    left: 15px;
+    background: #e6e9ec;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    margin: auto;
+}
+.t-two{
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+.t-two::after{
+    content: "";
+    height: 1px;
+    left: 15px;
+    background: #e6e9ec;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    margin: auto;
+}
+.div-one{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+}
+.one-right > div{
+    margin-top: -10px;
+}
+.page-right .top::after{
+    content: "";
+    height: 1px;
+    left: 15px;
+    background: #e6e9ec;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    margin: auto;
+}
+.page-right .one{
+    padding-top: 5px;
+}
+.page-right .active{
+    color: rgb(2, 2, 121);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 0;
+    position: relative;
+    display: flex;
+    padding-left: 15px;
+    margin-bottom: 6px;
+}
+.page-right .active::after{
+    content: "";
+    height: 1px;
+    left: 15px;
+    background: #d6dbe0;
+    position: absolute;
+    bottom: -5px;
+    right: 10px;
+    margin: auto;
+}
+.page-right .one{
+
+}
+
+
+@media print {
+    * {-webkit-print-color-adjust:exact;}
+}    

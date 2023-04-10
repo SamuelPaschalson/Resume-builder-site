@@ -5,33 +5,28 @@ if (!isset($_SESSION['id'])) {
   header("location: login.php");
 }
 $id = $_GET['id'];
+$ids = $_GET['ids'];
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="RemixIcon-master/fonts/remixicon.css"/>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="RemixIcon-master/fonts/remixicon.css"/>
+  <script src="js/index.js"></script>
     <title>Education - XenOK</title>
   </head>
   <body>
-    <nav class="fixed-top">
-      <label class="logo"><a class="navbar-brand" href=" ">Xen<b>OK</b></a></label>
-      <ul>
-        <li class="num">1</li>
-        <li class="">Heading</li>
-        <li class="num">2</li>
-        <li class="">Heading</li>
-      </ul>
-    </nav>
+  <nav class="fixed-top">
+            <input type="checkbox" name="check" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a class="nav-brand" href="" style="color: #e58411;"><img src="img/favicon.png" alt="logo"> XENOK.</a>
+        </nav>
     <header class="">
       <div class="heading-tag">
         <div class="heading-text">
@@ -63,6 +58,7 @@ $id = $_GET['id'];
         <div class="contact-info-body">
           <form class="" action="code.php" method="post">
             <input type="hidden" name="id" value="<?php echo($id);?>">
+            <input type="hidden" name="ids" value="<?php echo($ids);?>">
             <div class="form-group">
               <label class="form-control-label" for="">Level of Education</label>
               <select name="ledu" class="form-control form-select" aria-label="Default select example">
@@ -102,7 +98,7 @@ $id = $_GET['id'];
             </div>
           <div class="buttons">
             <div class="nav-btns">
-              <a class="btn btn-outline-primary" href="work-details.php">BACK</a>
+              <a class="btn btn-outline-primary" href="work-details.php?id=<?php echo $id; ?>&ids=<?php echo $ids; ?>">BACK</a>
             </div>
             <div class="nav-btn">
               <button name="edu" class="btn btn-outline-warning" type="submit">NEXT: EDUCATION 2</button>
@@ -122,6 +118,7 @@ $id = $_GET['id'];
         <div class="contact-info-body-small">
           <form class="" action="code.php" method="post">
             <input type="hidden" name="id" value="<?php echo($id);?>">
+            <input type="hidden" name="ids" value="<?php echo($ids);?>">
             <div class="form-group">
               <label class="form-control-label" for="">Level of Education</label>
               <select name="ledu" class="form-control form-select" aria-label="Default select example">
