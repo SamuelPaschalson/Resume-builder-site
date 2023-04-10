@@ -5,6 +5,14 @@
 .edudata.json
 .skill.json
 .userdata.json
+.social.json
+.workdetails.json
+.workhistory.json
 
 #svgs
 svgs/
+
+#fonts
+fonts/
+webfonts/
+font/

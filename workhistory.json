@@ -1,0 +1,35 @@
+[
+    {
+        "id": "2d399c88dd7810ca246a9ef98e54a0e364183286e5d9a4.57908786",
+        "ids": "1",
+        "company": "None ",
+        "position": "SOFTWARE DEVELOPER (INTERN)",
+        "city": "Port Harcourt",
+        "state": "Rivers",
+        "sdate": "2016-06",
+        "edate": "2018-01",
+        "current": null
+    },
+    {
+        "id": "2d399c88dd7810ca246a9ef98e54a0e364183286e5d9a4.57908786",
+        "ids": "2",
+        "company": "None ",
+        "position": "SOFTWARE DEVELOPER (INTERN)",
+        "city": "Port Harcourt",
+        "state": "Rivers",
+        "sdate": "2023-01",
+        "edate": "",
+        "current": "Current"
+    },
+    {
+        "id": "2ac72ef099d1f5a7ada9a4a99229d1b564300d62b70ed6.85506661",
+        "ids": "1",
+        "company": "yahoo",
+        "position": "editor",
+        "city": "oslo",
+        "state": "eziobodo",
+        "sdate": "0002-02",
+        "edate": "0009-07",
+        "current": "Current"
+    }
+]

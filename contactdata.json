@@ -1,0 +1,30 @@
+[
+    {
+        "id": "2d399c88dd7810ca246a9ef98e54a0e364183286e5d9a4.57908786",
+        "firstname": "Samuel",
+        "lastname": "Paschalson",
+        "age": "18",
+        "profession": "Web Developer",
+        "city": "Port Harcourt",
+        "state": "Rivers",
+        "country": "Nigeria",
+        "postal": "51111",
+        "phone": "234 818 254 0860",
+        "email": "samuelpaschalson@gmail.com",
+        "image": "02.jpg"
+    },
+    {
+        "id": "2ac72ef099d1f5a7ada9a4a99229d1b564300d62b70ed6.85506661",
+        "firstname": "James",
+        "lastname": "john",
+        "age": "25",
+        "profession": "yahoo boy editor",
+        "city": "oslo villA",
+        "state": "eziobodo",
+        "country": "imo",
+        "postal": "1234",
+        "phone": "09073469922",
+        "email": "samuelpaschalson4@gmail.com",
+        "image": "01.jpg"
+    }
+]
