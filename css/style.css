@@ -32,7 +32,7 @@
 @import 'magnific-popup.css';
 @import 'animated-headline.css';
 @import 'font-awesome.min.css';
-@import 'all.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
 @import 'themify-icons.css';
 
 @font-face{

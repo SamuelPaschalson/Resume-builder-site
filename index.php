@@ -13,9 +13,9 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Free Resume Builder | Resume Builder | XENOK | Online Resume | Builder" />
     <meta property="og:description" content="Free resume builder, the fastest resume maker with effective, built-in resume templates. Personal reviews by experts. Make your perfect resume in minutes!" />
-    <meta property="og:url" content="https://xenok@netlify.app.com/" />
+    <meta property="og:url" content="https://nerve-racking-shape.000webhostapp.com/xenok/" />
     <meta property="og:site_name" content="XENOK" />
-    <meta property="article:publisher" content="https://www.facebook.com/XENOK" />
+    <meta property="article:publisher" content="" />
     <meta property="og:updated_time" content="2023-01-30T05:24:17-05:00" />
     <meta property="article:published_time" content="2023-01-01T22:03:54-05:00" />
     <meta property="article:modified_time" content="2023-01-30T05:24:17-05:00" />
